@@ -27,6 +27,7 @@ public class CribaEratostenes {
         int[] primos;
         if (maximoValor < 2) {
             primos = new int[0]; // vacío
+            return primos;
         } else {
             boolean[] esPrimo = inicializarArray(maximoValor);
             criba(maximoValor, esPrimo);
